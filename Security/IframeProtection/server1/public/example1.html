@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClickHijacking Example</title>
+  </head>
+  <body>
+    <h1>ClickHijacking Example</h1>
+    <p>Click the button below to see a simple ClickHijacking demonstration.</p>
+    <iframe src="http://localhost:5011/iframe-website1" id="legit-iframe"></iframe>
+    <button id="overlay-button">Click Me!</button>
+    <style>
+      #legit-iframe {
+        background-color: #ccc;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+      }
+    </style>
+    <script>
+      // Simulating a ClickHijacking attack by overlaying the button on top of the dom
+      document
+        .getElementById("overlay-button")
+        .addEventListener("click", () => {
+          alert("Button Clicked!");
+        });
+    </script>
+  </body>
+</html>
