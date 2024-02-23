@@ -2,9 +2,7 @@ import React from "react";
 import { LANG } from "../utils/langConstants";
 
 const About = ({ lang }) => {
-  console.log(lang);
   const langSelect = LANG[lang];
-  console.log("About", langSelect);
   return (
     <div className="p-2 mx-8 pt-36">
       <div>
