@@ -15,7 +15,10 @@ const Body = () => {
   }, []);
 
   const handleScroll = () => {
-    if (window.innerHeight + window.scrollY >= document.body.scrollHeight) {
+    if (
+      window.innerHeight + window.scrollY >=
+      document.body.scrollHeight - 10
+    ) {
       getMemesData();
     }
   };
