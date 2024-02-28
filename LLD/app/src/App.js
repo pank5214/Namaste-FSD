@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Team from "./Components/Team";
 import Login from "./Components/Login";
 import ProtectedRoutes from "./Components/ProtectedRoutes";
+import Accordion from "./Components/Accordion";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route element={<ProtectedRoutes />}>
           <Route path="/team" element={<Team />}></Route>
         </Route>
+        <Route path="/accordion" element={<Accordion />}></Route>
         <Route path="/login" element={<Login />}></Route>
       </Routes>
     </BrowserRouter>

@@ -12,6 +12,8 @@ const Header = () => {
         <Link to={"/about"}>About</Link>
 
         <Link to={"/team"}>Team</Link>
+    
+        <Link to={"/accordion"}>Accordion</Link>
 
         <Link to={"/login"}>Login</Link>
         <select
@@ -26,7 +28,7 @@ const Header = () => {
         </select>
       </div>
       <Routes>
-        <Route path={"/about"} element={<About lang={lang}/>}></Route>
+        <Route path={"/about"} element={<About lang={lang} />}></Route>
       </Routes>
     </div>
   );
