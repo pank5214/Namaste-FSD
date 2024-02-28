@@ -2,9 +2,9 @@ import React from "react";
 
 const AccordionItem = ({ title, body, isOpen, setIsOpen }) => {
   return (
-    <div className="border border-black p-2 rounded-md my-2">
+    <div className="border p-2 rounded-md my-6">
       <div
-        className="flex justify-between bg-slate-200 p-3 rounded-md font-semibold text-lg cursor-pointer"
+        className="flex justify-between bg-slate-50 p-3 rounded-md shadow-lg font-semibold text-lg cursor-pointer"
         // onClick={() => {
         //   setIsOpen((isOpen) => !isOpen);
         // }}

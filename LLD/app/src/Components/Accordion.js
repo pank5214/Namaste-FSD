@@ -5,7 +5,7 @@ import { AccordionData } from "../utils/constants";
 const Accordion = () => {
   const [showIndex, setShowIndex] = useState(null);
   return (
-    <div className="w-1/2 m-auto my-4">
+    <div className="w-1/2 m-auto my-16">
       {AccordionData.map((data, index) => (
         <AccordionItem
           key={index}
