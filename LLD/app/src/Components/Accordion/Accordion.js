@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import AccordionItem from "./AccordionItem";
-import { AccordionData } from "../utils/constants";
+import { AccordionData } from "../../utils/constants";
 
 const Accordion = () => {
   const [showIndex, setShowIndex] = useState(null);

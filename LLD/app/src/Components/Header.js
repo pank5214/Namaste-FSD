@@ -21,6 +21,8 @@ const Header = ({ onLangeChange }) => {
         <Link to={"/team"}>Team</Link>
 
         <Link to={"/accordion"}>Accordion</Link>
+        
+        <Link to={"/comments"}>Comments</Link>
 
         <Link to={"/login"}>Login</Link>
 

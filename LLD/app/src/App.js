@@ -5,9 +5,10 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Team from "./Components/Team";
 import Login from "./Components/Login";
 import ProtectedRoutes from "./Components/ProtectedRoutes";
-import Accordion from "./Components/Accordion";
+import Accordion from "./Components/Accordion/Accordion";
 import About from "./Components/About";
 import { useState } from "react";
+import CommentsContainer from "./Components/Comment/CommentsContainer";
 
 function App() {
   const [lang, setLang] = useState("en");
@@ -24,6 +25,7 @@ function App() {
         </Route>
         <Route path={"/about"} element={<About lang={lang} />}></Route>
         <Route path="/accordion" element={<Accordion />}></Route>
+        <Route path="/comments" element={<CommentsContainer />}></Route>
         <Route path="/login" element={<Login />}></Route>
       </Routes>
     </BrowserRouter>
