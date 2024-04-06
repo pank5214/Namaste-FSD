@@ -3,7 +3,7 @@ import Body from "./Components/Body";
 import Header from "./Components/Header";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Team from "./Components/Team";
-import Login from "./Components/Login";
+import List from "./Components/List";
 import ProtectedRoutes from "./Components/ProtectedRoutes";
 import Accordion from "./Components/Accordion/Accordion";
 import About from "./Components/About";
@@ -26,7 +26,7 @@ function App() {
         <Route path={"/about"} element={<About lang={lang} />}></Route>
         <Route path="/accordion" element={<Accordion />}></Route>
         <Route path="/comments" element={<CommentsContainer />}></Route>
-        <Route path="/login" element={<Login />}></Route>
+        <Route path="/list" element={<List />}></Route>
       </Routes>
     </BrowserRouter>
   );
