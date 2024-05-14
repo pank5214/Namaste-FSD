@@ -3,12 +3,12 @@ import Body from "./Components/Body";
 import Header from "./Components/Header";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Team from "./Components/Team";
-import List from "./Components/List";
 import ProtectedRoutes from "./Components/ProtectedRoutes";
 import Accordion from "./Components/Accordion/Accordion";
 import About from "./Components/About";
 import { useState } from "react";
 import CommentsContainer from "./Components/Comment/CommentsContainer";
+import PokemonList from "./Components/List";
 
 function App() {
   const [lang, setLang] = useState("en");
@@ -26,7 +26,7 @@ function App() {
         <Route path={"/about"} element={<About lang={lang} />}></Route>
         <Route path="/accordion" element={<Accordion />}></Route>
         <Route path="/comments" element={<CommentsContainer />}></Route>
-        <Route path="/list" element={<List />}></Route>
+        <Route path="/list" element={<PokemonList />}></Route>
       </Routes>
     </BrowserRouter>
   );
