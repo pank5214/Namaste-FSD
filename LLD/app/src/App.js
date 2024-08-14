@@ -9,6 +9,7 @@ import About from "./Components/About";
 import { useState } from "react";
 import CommentsContainer from "./Components/Comment/CommentsContainer";
 import PokemonList from "./Components/List";
+import ImageSlider from "./Components/Image-slider/ImageSlider";
 
 function App() {
   const [lang, setLang] = useState("en");
@@ -27,6 +28,7 @@ function App() {
         <Route path="/accordion" element={<Accordion />}></Route>
         <Route path="/comments" element={<CommentsContainer />}></Route>
         <Route path="/list" element={<PokemonList />}></Route>
+        <Route path="/image-slider" element={<ImageSlider />}></Route>
       </Routes>
     </BrowserRouter>
   );
