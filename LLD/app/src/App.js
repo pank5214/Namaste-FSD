@@ -11,6 +11,7 @@ import CommentsContainer from "./Components/comments/CommentsContainer";
 import PokemonList from "./Components/List";
 import ImageSlider from "./Components/image-slider/ImageSlider";
 import Pagination from "./Components/pagination/Pagination";
+import FrontendPagination from "./Components/pagination/FrontendPagination";
 
 function App() {
   const [lang, setLang] = useState("en");
@@ -30,7 +31,8 @@ function App() {
         <Route path="/comments" element={<CommentsContainer />}></Route>
         <Route path="/list" element={<PokemonList />}></Route>
         <Route path="/image-slider" element={<ImageSlider />}></Route>
-        <Route path="/pagination" element={<Pagination />}></Route>
+        {/* <Route path="/pagination" element={<Pagination />}></Route> */}
+        <Route path="/pagination" element={<FrontendPagination />}></Route>
       </Routes>
     </BrowserRouter>
   );
