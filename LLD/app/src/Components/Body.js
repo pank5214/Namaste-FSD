@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import MemesCard from "./MemesCard";
 import Shimmer from "./Shimmer";
 
+const LIMIT = 20;
+
 const Body = () => {
   const [memes, setMemes] = useState([]);
   const [showShimmer, setShowShimmer] = useState(false);
@@ -33,7 +35,7 @@ const Body = () => {
   return (
     <div className="flex flex-wrap justify-center">
       {memes && memes.map((meme, i) => <MemesCard key={i} data={meme} />)}
-      {showShimmer && <Shimmer />}
+      {showShimmer && <Shimmer limit={LIMIT} />}
     </div>
   );
 };

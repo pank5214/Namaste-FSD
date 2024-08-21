@@ -25,8 +25,9 @@ const Header = ({ onLangeChange }) => {
         <Link to={"/comments"}>Comments</Link>
 
         <Link to={"/list"}>List</Link>
-        
+
         <Link to={"/image-slider"}>ImageSlider</Link>
+        <Link to={"/pagination"}>Pagination</Link>
 
         {isAboutPage && (
           <select
